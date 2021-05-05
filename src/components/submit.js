@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Submit(){
-    return(
+export default function Submit(props) {
+    return (
         <>
-            <input type="submit" name="search-btn" id="search-btn"  value="Buscar"></input>
+            <input onClick={props.onClick} type="submit" name="search-btn" id="search-btn" value="Buscar"></input>
         </>
     )
 }
