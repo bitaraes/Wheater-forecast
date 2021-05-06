@@ -24,6 +24,7 @@ export default function App() {
         const filters = "&lang=pt_br&units=metric";
         const url = "https://api.openweathermap.org/data/2.5/weather?q=";
         let urlRequest = await fetch(url + cityName + "&appid=" + apiKey + filters);
+        console.log(urlRequest.url)
         let responseJson = await urlRequest.json();
         if (responseJson.cod === "404") {
             return (
