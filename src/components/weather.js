@@ -9,5 +9,5 @@ export default function Weather({ clima }) {
             <img src={`http://openweathermap.org/img/wn/${icon}@2x.png`} alt="Clima"></img>
             <div className="description">{description}</div>
         </div>
-    )
-}
+    );
+};
